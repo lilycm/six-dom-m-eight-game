@@ -22,20 +22,20 @@
     <main class="bg-[#010313] bg-[url(images/background.png)] bg-no-repeat bg-center min-h-screen">
 
         <!-- home section start -->
-        <section class="home hidden">
+        <section id="home" class="">
             <div class="flex flex-col justify-center items-center space-y-5 h-screen">
                 <h1 class="font-anton text-center text-9xl font-extrabold items-center text-white tracking-wide">
                     ALPHABET CLASH</h1>
                 <p class="text-white font-poppins text-lg font-semibold">Unleash Your Keyboard Kung Fu : Press “Enter”
                     to Play</p>
-                <button class="bg-white px-4 py-3 font-poppins text-lg font-semibold rounded-md w-32 h-20 btn">Play
+                <button onclick="play()" class="bg-white px-4 py-3 font-poppins text-lg font-semibold rounded-md w-32 h-20 btn">Play
                     Now</button>
             </div>
         </section>
         <!-- home section end -->
 
         <!-- play ground section start -->
-        <section class="-play-ground">
+        <section id="play-ground" class="hidden">
             <div class="space-y-7 flex flex-col items-center gap-20">
                 <!-- screen -->
                 <div class="bg-[#FFFFFFB3] artboard artboard-horizontal phone-6 border-[#010313CC] border-[20px] rounded-2xl">
@@ -107,8 +107,15 @@
         <!-- play ground section end -->
 
         <!-- score section start -->
-        <section class="score">
-
+        <section class="score flex items-center justify-center h-screen hidden">
+            <div class="space-y-5 text-center rounded-lg bg-[#FFFFFF33] py-7 px-4">
+                <h1 class="text-8xl text-white font-poppins">
+                    <span class="font-extrabold">Score:</span>
+                    <span>14</span>
+                </h1>
+                <button class="bg-white px-5 py-3 rounded-lg text-lg font-poppins font-semibold">Play Again</button>
+                <p class="text-white font-semibold text-lg font-poppins">Practice will make you Pro</p>
+            </div>
         </section>
         <!-- score section end -->
     </main>
