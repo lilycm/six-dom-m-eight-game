@@ -91,14 +91,14 @@
                         <button class="btn bg-pink-400 rounded-full border-0 px-5 py-2">
                             <span class=" font-poppins text-base font-semibold text-white">Life</span>
                             <img src="images/heart.svg" alt="">
-                            <span class=" font-poppins text-base font-semibold text-white">1</span>
+                            <span id="current-life" class=" font-poppins text-base font-semibold text-white">5</span>
                           </button>
                     </div>
                     <div>
                         <button class="btn rounded-full border-0 px-5 py-2 bg-purple-700">
                             <span class=" font-poppins text-base font-semibold text-white">Score</span> 
                             <img src="images/dollar.svg" alt="">
-                            <span class=" font-poppins text-base font-semibold text-white">1</span>
+                            <span id="current-score" class=" font-poppins text-base font-semibold text-white">0</span>
                           </button>
                     </div>
                 </div>
@@ -107,13 +107,14 @@
         <!-- play ground section end -->
 
         <!-- score section start -->
-        <section class="score flex items-center justify-center h-screen hidden">
+        <section id="score" class="flex items-center justify-center h-screen hidden">
             <div class="space-y-5 text-center rounded-lg bg-[#FFFFFF33] py-7 px-4">
+                <h1 class="text-3xl text-white font-poppins font-bold">Game Over !!</h1>
                 <h1 class="text-8xl text-white font-poppins">
                     <span class="font-extrabold">Score:</span>
-                    <span>14</span>
+                    <span id="last-score">14</span>
                 </h1>
-                <button class="bg-white px-5 py-3 rounded-lg text-lg font-poppins font-semibold">Play Again</button>
+                <button onclick="play()" class="bg-white px-5 py-3 rounded-lg text-lg font-poppins font-semibold">Play Again</button>
                 <p class="text-white font-semibold text-lg font-poppins">Practice will make you Pro</p>
             </div>
         </section>
